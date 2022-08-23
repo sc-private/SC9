@@ -534,25 +534,22 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
   goblok = fs.readFileSync('./video/ga.jpg')
-                xavior.sendMessage(m.chat, { image: goblok, caption: `┌──⭓ *Sewa Bot*
+                xavior.sendMessage(m.chat, { image: goblok, caption: `┌──⭓ *Sewa Bot*
+
 │⭔ 1 Minggu :10k
 │⭔ 1 Bulan :15k
 │⭔ Permanen :20k
 └───────⭓
-┌──⭓ *Jadi Bot*
+┌──⭓ *Jadi Bot*
+
 │⭔ Jasa Jadi Bot: 30k
-│⭔ Jadi Owner AzzBot: 15k
-└───────⭓
-┌──⭓ *Harga Sc Bot Wa*
-│⭔ Versi 1 :20k
-│⭔ Versi 2 :25k
-│⭔ Free :Di Yt MBY•OFFICIAL
+│⭔ Jadi Owner : 10k
 └───────⭓` }, { quoted: m })
             }
             case 'subscribe':{
             smeme = fs.readFileSync('./video/bro.mp4')
 
-xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `subrek.mp4`, caption: `Betewe Lu Dah Janji Mau Subscribe\n\nJangan PHP Yah 😊\n\nSubscibe:https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g`},{ quoted: m })} break
+xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `subrek.mp4`, caption: `Betewe Lu Dah Janji Mau Subscribe\n\nJangan PHP Yah 😊\n\nSubscibe:https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb`},{ quoted: m })} break
 
 case 'runtime': { m.reply('4 days, 9 hours, 26 minutes')}
           break
@@ -567,7 +564,7 @@ xavior.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:true }, {q
             case 'session': {
             if (!isCreator) throw mess.owner
             ana = fs.readFileSync('./Xavior.json')
-              m.reply('*Woe Bre Minimal Subscribe Yt MBY•OFFICIAL Lah*')
+              m.reply('*Yαɳɳ Bσƚ Mԃ*')
             xavior.sendMessage(m.chat, {document: ana, mimetype: 'application/json', fileName: `Xavior.json`}, {quoted:m})}
             break
             
@@ -851,7 +848,7 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
                 if (!text) throw 'Text ?'
-                await xavior.groupUpdateDescription(m.chat, text).then((res) => m.reply(mess.success)).catch((err) => m.reply(jsonformat(err)))
+                await xavior.groupUpdateDe.....ion(m.chat, text).then((res) => m.reply(mess.success)).catch((err) => m.reply(jsonformat(err)))
             }
             break
           case 'setppbot': {
@@ -873,7 +870,7 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
             break
             case 'namafotobot|subscribe': {
              if (!isCreator) throw mess.owner
-             xavior.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `Foto menu Berhasil Diganti\n\nHei Lord *MBY•OFFICIAL*..🙏\n\nJangan Sering Sering Ubah Fot Bot Yah🗿` }, { quoted: m })
+             xavior.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/f64b8b8de2d22b7b40562.jpg' }, caption: `Foto menu Berhasil Diganti\n\nYαɳɳ Bσƚ Mԃ*..🙏\n\nJangan Sering Sering Ubah Fot Bot Yah🗿` }, { quoted: m })
             } break
             
            case 'setppgroup': case 'setppgrup': case 'setppgc': {
@@ -899,7 +896,7 @@ let teks = `══✪〘 *👥 Tag All* 〙✪══
                 xavior.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'hidetag': {
+                case 'hidetag': case 'h': {
             if (!m.isGroup) throw mess.group
             if (!isBotAdmins) throw mess.botAdmin
             if (!isAdmins) throw mess.admin
@@ -1240,13 +1237,13 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'Join My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1272,15 +1269,15 @@ break
             break
             case 'bc': case 'broadcast': case 'bcall': {
                 if (!isCreator) throw mess.owner
-                if (!text) throw `Text mana?\n\nContoh : ${prefix + command} Subscribe Yt MBY•OFFICIAL`
+                if (!text) throw `Text mana?\n\nContoh : ${prefix + command} Hallo`
                 let anu = await store.chats.all().map(v => v.id)
                 m.reply(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 1.5} detik`)
 		for (let yoi of anu) {
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'Join My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1578,7 +1575,7 @@ break
                 })
                 }
                 break
-        case 'gimage': {
+        case 'gimage': case 'gimg': {
         if (!text) throw `Contoh : ${prefix + command} kaori cicak`
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
@@ -1630,7 +1627,7 @@ break
             }
             break
            
-           case 'tutor': {
+           case 'GaTauksjsjshh': {
            let yts = require("yt-search")
                 let search = await yts('https://youtu.be/yZ1TEsTeE_k')
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
@@ -1642,11 +1639,11 @@ break
                     image: { url: anu.thumbnail },
                     caption: `
 ⭔ *Title* : Tutor Buat Bot Seperti Di Gc 🗿
-⭔ *No Wa*: 081511480762
+⭔ *No Wa*: 082252285143
 ⭔ *Duration* : 24Hours
 ⭔ *Viewers* : 14M views
 ⭔ *Upload* At : 1 years ago
-⭔ *Author* : MBY•OFFICIAL 
+⭔ *Author* : 70 MS 
 ⭔ *Channel* : ${anu.author.url}
 ⭔ *Description* : Gak Subrek Bot Mati!
 ⭔ *Url* : ${anu.url}`,
@@ -1704,7 +1701,7 @@ break
                 xavior.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${urls[text - 1]}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
-            case 'pinterest': {
+            case 'pinterest': case 'pin': {
                 m.reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
@@ -2821,10 +2818,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     footerText: "Note:JANGAN SPAM!!",
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "🤖Bot By MBY•OFFICIAL🤖",
+								"title": "Yαɳɳ Bσƚ Mԃ",
 								"rows": [
 									{
-										"title": "▪️Tutor Pasang Bot",
+										"title": "▪️",
 										"rowId": `${prefix}tutor`
 									}
 								]
@@ -2923,7 +2920,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Owner 👨‍💻",
 								"rows": [
 									{
-										"title": "MBY•OFFICIAL",
+										"title": "Yαɳɳ Bσƚ Mԃ",
 										"rowId": `${prefix}owner`
 									
 									}]
@@ -2936,23 +2933,19 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
 
             
-            case 'okay': { m.reply('Subrek lah Yt MBY•OFFICIAL')} break
+            case 'nsbsjslj': { m.reply('Apa')} break
             
              case 'menu': {
             anu = `── *Welcome* ──
 Hai Saya Bot Wa
 Siap Melayani Anda
-Ketik (.menu) Untuk Mengakses
-Mau Script? Bisa Chat Owner
-Thanks Sudah Menggunakan
-AzzBot-MD Jangan Lupa Subscribe
-Chanel : https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g
-Nih Musik Buat Menghibur
+Ketik (.menu) Untuk Mengakses 
+My Group : https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb
 ───────⭓`
             let btn = [{
                                 
                                 quickReplyButton: {
-                                    displayText: '✰➪Daftar Fitur',
+                                    displayText: '✰Daftar Fitur',
                                     id: 'command'
                             }    }, {quickReplyButton: {
                                     displayText: 'Thanks👌',
@@ -2978,8 +2971,8 @@ break
  case 'allmenu': {
                 anu = `
 
-┌──⭓ *𝘈𝘻𝘻𝘉𝘰𝘵•𝘔𝘋*
-│⭔ 𝘖𝘸𝘯𝘦𝘳:𝗬𝗮𝗵𝘆𝗮 
+┌──⭓ *Yαɳɳ Bσƚ Mԃ*
+│⭔ 𝘖𝘸𝘯𝘦𝘳: 𝓡𝔂𝓪𝓷𝓷- 
 │⭔ 𝘝𝘦𝘳𝘴𝘪𝘰𝘯: 4.0
 │⭔ 𝘙𝘶𝘯𝘝𝘪𝘢:𝘏𝘦𝘳𝘰𝘬𝘶
 └───────⭓
@@ -3307,13 +3300,13 @@ break
 𝐁𝐲:𝐘𝐚𝐡𝐲𝐚𝐆𝐚𝐧𝐳𝐳|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'Join My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3327,7 +3320,7 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3374,13 +3367,13 @@ break
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3394,7 +3387,7 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3429,13 +3422,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3449,7 +3442,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3490,13 +3483,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3510,7 +3503,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3546,13 +3539,13 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3566,7 +3559,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3610,13 +3603,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3630,7 +3623,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3688,13 +3681,13 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3708,7 +3701,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3747,13 +3740,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3767,7 +3760,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3803,13 +3796,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3823,7 +3816,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3864,13 +3857,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3884,7 +3877,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3941,13 +3934,13 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3961,7 +3954,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4006,13 +3999,13 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4026,7 +4019,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4063,13 +4056,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4083,7 +4076,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4118,13 +4111,13 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4138,7 +4131,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4168,13 +4161,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4188,7 +4181,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4219,13 +4212,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4239,7 +4232,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4277,13 +4270,13 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4297,7 +4290,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4338,13 +4331,13 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'Join My Group',
+                                    url: 'https://chat.whatsapp.com/Eg4Rhkq0NBtBMWyhk1IOnb'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 822-5228-5143'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4358,7 +4351,7 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: '.....',
                                     id: 'subscribe'
                                 }
                             }]
